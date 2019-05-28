@@ -10,4 +10,4 @@ sh ipcheck.sh ip/hostname
 ```
 
 ## Add RPB Host
-If you have another RBL Host, you can add new line to check IP Blacklist. 
+If you have another RBL Host, you can simply add another host in myddata file to check iIP Blacklist.
