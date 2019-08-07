@@ -26,7 +26,7 @@ REVERSE_DNS=$(dig +short -x $changeip)
 echo IP $changeip NAME ${REVERSE_DNS:----}
 
 while read data; do
-	printf "%-60s" " ${reverse}.${data}."
+	printf "%-50s"  " ${reverse}.${data}."
 	#echo "$(dig +short -t a ${reverse}.${data}. |  tr '\n' ' ')"
 	LISTED="$(dig +short -t a ${reverse}.${data}.)"
 	echo ${LISTED:----}
